@@ -1,4 +1,4 @@
-import {Doer} from '../../../../LibraryClassA/src/main/ts/LibraryA';
+import {Doer} from 'library-a/src/main/ts/LibraryA';
 
 export class AnotherDoer {
   constructor() {
