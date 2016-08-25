@@ -1,11 +1,13 @@
 import {Doer} from 'library-a/src/main/ts/LibraryA';
 
 export class AnotherDoer {
-  constructor() {
+  private doer: LibraryA.IDoer;
 
+  constructor() {
+    this.doer = new Doer('Do things...');
   }
 
   doThings(): string {
-    return new Doer().doThings();
+    return this.doer.doThings();
   }
 }

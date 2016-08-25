@@ -5,7 +5,7 @@ describe('Doer', () => {
   let sot: Doer;
 
   beforeEach(() => {
-    sot = new Doer();
+    sot = new Doer('Doing things...');
   });
 
   it('should do things', () => {

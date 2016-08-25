@@ -9,6 +9,6 @@ describe('AnotherDoer', () => {
   });
 
   it('should do things', () => {
-    expect(sot.doThings()).to.equal('Doing things...');
+    expect(sot.doThings()).to.equal('Do things...');
   });
 });

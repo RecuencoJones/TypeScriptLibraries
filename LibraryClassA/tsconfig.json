@@ -3,9 +3,11 @@
     "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
-    "outDir": "target"
+    "outDir": "target",
+    "rootDir": "."
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "index.d.ts"
   ]
 }
