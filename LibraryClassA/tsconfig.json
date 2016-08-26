@@ -4,10 +4,12 @@
     "target": "es5",
     "sourceMap": true,
     "outDir": "target",
-    "rootDir": "."
+    "rootDir": ".",
+    "declaration": true
   },
   "exclude": [
     "node_modules",
+    "target",
     "index.d.ts"
   ]
 }

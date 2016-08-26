@@ -3,18 +3,28 @@
   "version": "0.0.1",
   "devDependencies": {
     "chai": "3.5.0",
+    "istanbul-instrumenter-loader": "0.2.0",
     "karma": "1.2.0",
     "karma-chai": "0.1.0",
     "karma-mocha": "1.1.1",
+    "karma-phantomjs-launcher": "1.0.1",
+    "karma-typescript-preprocessor2": "1.2.1",
+    "karma-webpack": "1.8.0",
     "mocha": "3.0.2",
+    "phantomjs-prebuilt": "2.1.12",
+    "remap-istanbul": "0.6.4",
     "rimraf": "2.5.4",
+    "ts-loader": "0.8.2",
     "typescript": "1.8.10",
-    "typings": "1.3.2"
+    "typings": "1.3.2",
+    "webpack": "1.13.2"
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/typings install",
     "clean": "./node_modules/.bin/rimraf target",
-    "build": "./node_modules/.bin/tsc -p tsconfig.json",
-    "test": "./node_modules/.bin/mocha target/src/test/ts"
+    "build": "npm run clean && npm run build:ts && npm run build:umd",
+    "build:ts": "./node_modules/.bin/tsc -p tsconfig.json",
+    "build:umd": "./node_modules/.bin/webpack",
+    "test": "npm run clean && npm run build:ts && ./node_modules/.bin/mocha target/src/test/ts"
   }
 }

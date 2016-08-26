@@ -1,5 +1,5 @@
 .idea
-LibraryClassA/node_modules
+node_modules
 target
 typings
 npm-debug.log

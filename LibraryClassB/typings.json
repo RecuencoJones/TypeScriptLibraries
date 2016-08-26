@@ -1,7 +1,4 @@
 {
-  "globalDependencies": {
-    "library-a": "file:./node_modules/library-a/index.d.ts"
-  },
   "globalDevDependencies": {
     "chai": "registry:dt/chai#3.4.0+20160601211834",
     "mocha": "registry:dt/mocha#2.2.5+20160720003353"
